@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49d8d9e5-b85f-4112-b06a-092b6e1d297f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-632915156">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="26" />
+          <entry key="csv" value="15" />
+          <entry key="html" value="119" />
+          <entry key="js" value="54" />
+          <entry key="py" value="53" />
+          <entry key="svg" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="26" />
+          <entry key="HTML" value="119" />
+          <entry key="JavaScript" value="54" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Python" value="53" />
+          <entry key="SVG" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="1222" />
+          <entry key="css" value="3730" />
+          <entry key="csv" value="9" />
+          <entry key="html" value="11862" />
+          <entry key="js" value="6632" />
+          <entry key="py" value="14381" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="3730" />
+          <entry key="HTML" value="11862" />
+          <entry key="JavaScript" value="6632" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Python" value="15603" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.63092107">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="401" column="29" lean-forward="true" selection-start-line="401" selection-start-column="29" selection-end-line="401" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#81#0" expanded="true" />
+                    <marker date="1556631367040" expanded="true" signature="22290:23783" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_pt.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="637">
+                  <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced_pt.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-799">
+                  <caret line="244" column="93" selection-start-line="244" selection-start-column="93" selection-end-line="244" selection-end-column="93" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fulltank/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-312">
+                  <caret line="87" selection-start-line="87" selection-end-line="87" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/views_en.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="11696">
+                  <caret line="688" column="51" selection-start-line="688" selection-start-column="51" selection-end-line="688" selection-end-column="51" />
+                  <folding>
+                    <element signature="e#0#81#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="646">
+                  <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search_pt.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>multi</find>
+      <find>city1</find>
+      <find>city3</find>
+      <find>csrf</find>
+      <find>car_city</find>
+      <find>price</find>
+      <find>fa</find>
+      <find>desk</find>
+      <find>mob</find>
+      <find>tit</find>
+      <find>title</find>
+      <find>instru</find>
+      <find>gas_price1</find>
+      <find>btn</find>
+      <find>a</find>
+      <find>sear</find>
+      <find>quest</find>
+      <find>alert</find>
+      <find>12px</find>
+      <find>EMAIL_HOST_USER</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/fulltank/fulltank/urls.py" />
+        <option value="$PROJECT_DIR$/fulltank/veiculos_leves_2019_smallpdf_draft4.csv" />
+        <option value="$PROJECT_DIR$/fulltank/veiculos_leves_2019_smallpdf_draft5.csv" />
+        <option value="$PROJECT_DIR$/fulltank/veiculos_leves_2019_smallpdf_draft6.csv" />
+        <option value="$PROJECT_DIR$/fulltank/veiculos_leves_2019_smallpdf.csv" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/result.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/result_location.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/result_model.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/result_version.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/result_car.html" />
+        <option value="$PROJECT_DIR$/fulltank/teste.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/index.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/index.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/index2.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/index2_bkp2.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_bkp3.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/admin.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles2.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base2.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base4.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/error.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base3.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles3.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/models.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/views_pt.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base2_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles2_pt.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base3_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base4_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/views_en.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/index2_pt.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/index2.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bkp2_pt.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/urls.py" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/base.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bkp2.css" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/contact_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/contact.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/faq_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/faq.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search_pt.html" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced_pt.js" />
+        <option value="$PROJECT_DIR$/fulltank/fuel/views.py" />
+        <option value="$PROJECT_DIR$/fulltank/fulltank/settings.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fuel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project_final" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_final" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+              <item name="fulltank" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../src7/mysite" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel\templates\fuel" />
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel\static\fuel" />
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel" />
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fulltank" />
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel\static\fuel" />
+      <recent name="D:\Google Drive\CS50W\lpdaj\project_final\fulltank\fuel" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49d8d9e5-b85f-4112-b06a-092b6e1d297f" name="Default Changelist" comment="" />
+      <created>1553189692681</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553189692681</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19915701" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28416485" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="11" visible="true" weight="0.09110629" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base2_bkp.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base_bkp.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bkp.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_bkp3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="129" column="26" lean-forward="true" selection-start-line="129" selection-start-column="26" selection-end-line="129" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_bkp4.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/magnifying-glass.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/magnifying-glass.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base_bkp2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="112" column="4" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bg_color.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base_bkp3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search_bkp.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/index2_bkp3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_bkp2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="61" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="42" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced_bkp2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/index2_bkp4.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fulltank/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="137" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fulltank/settings_bkp.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/views_pt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="105" column="19" selection-start-line="105" selection-start-column="19" selection-end-line="105" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles2_pt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base4_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/index2_pt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="134" column="29" lean-forward="true" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="366" column="6" selection-start-line="366" selection-start-column="6" selection-end-line="366" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/index2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bkp2_pt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="238" column="34" lean-forward="true" selection-start-line="238" selection-start-column="34" selection-end-line="238" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/styles_bkp2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="240" lean-forward="true" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base2_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base3_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="84" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/base3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="208" column="38" selection-start-line="208" selection-start-column="38" selection-end-line="208" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/contact_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/faq_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/advanced_search_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/static/fuel/advanced_pt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="244" column="93" selection-start-line="244" selection-start-column="93" selection-end-line="244" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/views_en.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11696">
+          <caret line="688" column="51" selection-start-line="688" selection-start-column="51" selection-end-line="688" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/templates/fuel/index3_pt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fulltank/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fulltank/fuel/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="401" column="29" lean-forward="true" selection-start-line="401" selection-start-column="29" selection-end-line="401" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#81#0" expanded="true" />
+            <marker date="1556631367040" expanded="true" signature="22290:23783" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

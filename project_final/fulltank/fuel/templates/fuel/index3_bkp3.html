@@ -1,0 +1,180 @@
+{% extends "fuel/base.html" %}
+
+{% block title %}
+    Comparador
+{% endblock %}
+
+{% block body %}
+<!--<div id="background" class="row">-->
+    <div class="bg">
+
+        <div class="container-fluid">
+
+            <div class="row justify-content-center">
+                <h2 id="instructions">The Comparador is easy to use. Just follow the three steps below</h2>
+            </div>
+            </br>
+            <!--<div class="mx-auto" style="width: 400px;">-->
+
+            <div class="row justify-content-md-center no-gutters">
+                    <div class="col-6">
+                    <svg height="80" width="350">
+                        <circle cx="40" cy="40" r="40" fill="#ff4307"/>
+                        <text x="40" y="40"
+                              text-anchor="middle"
+                              font-size="40px"
+                              fill="#51005d"
+                              font-weight="bold"
+                              alignment-baseline="central"
+                        >1
+                        </text>
+                        <text x="85" y="40"
+                                  text-anchor="start"
+                                  font-size="35px"
+                                  fill="#51005d"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >What's your car?
+                            </text>
+                    </svg>
+
+                </div>
+            </div>
+
+        </br>
+
+            <form id="myForm" action="{% url 'search_car_city' %}" method="post">
+             {% csrf_token %}
+                <div id="search" class="input-container">
+                    <i class="fa fa-search icon"></i>
+                    <input class="input-field" id="answer" type="text" list="car2" autofocus placeholder="Enter your car" autocomplete="on">
+                    <button id="delete_car">Delete</button>
+                </div>
+                <datalist id="car2">
+                    {% for car in cars %}
+                        <option data-value="{{ car.id }}">{{ car }}</option>
+                    {% endfor %}
+                </datalist>
+                <div><a href="advanced_search">Advanced Search</a></div>
+
+
+               <div class="row justify-content-md-center no-gutters">
+
+                    <div id="circle" class="col-6">
+                        <svg height="80" width="350">
+                            <circle cx="40" cy="40" r="40" fill="#ff4307"/>
+                            <text x="40" y="40"
+                                  text-anchor="middle"
+                                  font-size="40px"
+                                  fill="#51005d"
+                                  font-weight="bold"
+                                  alignment-baseline="central"
+                                  > 2
+                            </text>
+                            <text x="85" y="40"
+                                  text-anchor="start"
+                                  font-size="35px"
+                                  fill="#51005d"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >Where are you?
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="input-container">
+                    <input id="city4"  name="city2" type="text" list="city2" autofocus placeholder="Enter your city" autocomplete="on">
+                    <button id="delete">Delete</button>
+                </div>
+                 <datalist id="city2">
+                     <select multiple size=10>
+                         <option value="{{ city }}">{{ location.city }}</option>
+                        {% for location in locations %}
+                            <option value="{{ location.city }}">{{ location.city }}</option>
+                        {% endfor %}
+                     </select>
+                </datalist>
+
+                <div class="manual_input">
+                    Or enter the fuel prices directly (optional)
+                    <button type="button" class="expand">Expand</button>
+                </div>
+
+                 Or enter the fuel prices directly (optional)
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="manual_input2 manual_input3">
+                    Expand
+                 </button>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="collapse multi-collapse" id="manual_input2">
+                            <div class="card card-body">
+                                <label for="ethanol_price1">Ethanol R$/Liter</label>
+                                <input name="ethanol_price" id="ethanol_price1" type="number" step="0.001" placeholder="Ex: 2.99" autocomplete="off" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="collapse multi-collapse" id="manual_input3">
+                            <!--<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">-->
+                                <!--<div class="card-header">Gas R$/Liter</div>-->
+                                    <div class="card card-body">
+                                        <h6 class="card-title">Gas R$/Liter</h6>
+                                        <!--<label for="gas_price1">Gas R$/Liter</label>-->
+                                        <input name="gas_price" id="gas_price1" type="number" step="0.001" placeholder="Ex: 3.99" autocomplete="off" >
+                                    </div>
+                                <!--</div>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="row justify-content-md-center no-gutters">
+                    <div class="col-6">
+                        <svg height="80" width="350">
+                            <circle cx="40" cy="40" r="40" fill="#ff4307"/>
+                            <text x="40" y="40"
+                                  text-anchor="middle"
+                                  font-size="40px"
+                                  fill="#51005d"
+                                  font-weight="bold"
+                                  alignment-baseline="central"
+                                  >3
+                            </text>
+                            <text x="85" y="40"
+                                  text-anchor="start"
+                                  font-size="35px"
+                                  fill="#51005d"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >Click to se the results
+                            </text>
+                        </svg>
+                    </div>
+                 </div>
+                    <input type="hidden" name="answer" id="answer-hidden" />
+                    <input type="submit" value="send" id="submit"/>
+             </form>
+
+            <div
+                id="selected_city" data-selected_city="{{ city2 }}">
+            </div>
+
+
+            <div
+                id="city4">
+            </div>
+
+
+            <h4 id="car_summary1"></h4>
+            <div id="car_summary2"></div>
+            <div id="car_summary3"></div>
+
+
+        </form>
+
+    </div>
+
+<!--</div>-->
+{% endblock %}

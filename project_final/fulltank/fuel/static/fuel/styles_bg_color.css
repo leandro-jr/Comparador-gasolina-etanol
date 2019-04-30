@@ -1,0 +1,212 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff4307;
+    background: white;
+}
+
+#nav-color {
+    background: #51005d;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+}
+
+html {
+    background: #51005d;
+}
+
+#fake {
+    display: none;
+}
+
+#desktop {
+    width: 310px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 310px;
+    background-repeat: no-repeat;
+}
+
+#mobile {
+    width: 270px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 270px;
+    background-repeat: no-repeat;
+}
+
+
+
+.bg {
+  /* The image used */
+
+    background-image: url("background_color2.jpg");
+
+    background-size: cover;
+    background-position:center;
+    flex-grow: 1;
+    overflow-y:hidden;
+    min-height: 86vh;
+}
+
+
+svg circle {
+    box-shadow: black 0 0 20px;
+    border: 1px solid white;
+}
+.question {
+    padding: 5px;
+}
+
+#instructions {
+    padding-top: 20px;
+    color: #ff4307;
+
+}
+
+.card {
+    background: none;
+}
+
+#gas_price1 {
+    min-width: auto;
+}
+
+#city4, #answer {
+    min-width: 240px;
+}
+
+.col-auto {
+    text-align:justify;
+}
+
+.form-row {
+    text-align:justify;
+}
+
+.form-control {
+    text-align:justify;
+}
+
+.title {
+    color: #51005d;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.btn {
+    background: #51005d;
+    color: white;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.btn#submit{
+    background: #ff4307;
+    color: white;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+a {
+    color: #ff4307;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+datalist {
+        display: none;
+}
+
+textarea, input {
+    padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#car_summary1 {
+    color: #51005d;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+footer {
+    background: #51005d;
+    padding: 10px 10px;
+    color: #ff4307;
+    font-size: 12px;
+}
+
+#mobile {
+        display: none;
+    }
+
+@media screen and (max-width: 395px) {
+    #mobile {
+        display: inline-block;
+    }
+    #desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .input-group input {
+        margin-left: 40px;
+    }
+}
+
+
+@keyframes expand {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    33% {
+        opacity: 1;
+        height: 40px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    66% {
+        opacity: 1;
+        height: 80px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 120px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.manual_input {
+    animation-name: expand;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}

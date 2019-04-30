@@ -1,0 +1,212 @@
+{% extends "fuel/base_pt.html" %}
+{% load staticfiles %}
+
+<div class="title">
+{% block title %}
+Comparador
+{% endblock %}
+</div>
+
+{% block body %}
+    <div class="bg">
+        <div class="container-fluid">
+            <!--Opening-->
+            <div class="row justify-content-center">
+                <h2 id="instructions"><strong>Comparador é fácil de usar. Siga os 3 passos abaixo</strong></h2>
+            </div>
+            <div class="row justify-content-center">
+                <h1 id="instructions2">Comparador determina qual é a opção mais barata para abastecer seu carro: gasolina ou etanol</h1>
+            </div>
+
+            </br>
+            <!--1 Drawing-->
+            <div class="row justify-content-md-center no-gutters">
+                    <div class="col-6">
+                    <svg height="70" width="340">
+                        <circle cx="35" cy="35" r="35" fill="#ff5909"/>
+                        <text x="35" y="35"
+                              text-anchor="middle"
+                              font-size="35px"
+                              fill="#51005d"
+                              font-weight="bold"
+                              alignment-baseline="central"
+                              >1
+                        </text>
+                        <text x="74" y="35"
+                                  text-anchor="start"
+                                  font-size="30px"
+                                  fill="white"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >Escolha seu Carro
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </br>
+            <!--Car and Location Form-->
+            <form id="myForm" action="{% url 'search_car_city' %}" method="post">
+             {% csrf_token %}
+                <div class="form-row justify-content-center">
+                    <div id="search" class="col-auto">
+                        <div class="input-group mb-3">
+                            <input class="form-control" id="answer" type="text" list="car2" autofocus placeholder="Ex: onix" autocomplete="on">
+                            <div class="input-group-append">
+                                <button class="btn btn-sm" id="delete_car"><i class="fas fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <datalist id="car2">
+                        {% for car in cars %}
+                           <option data-value="{{ car.id }}"><pre>{{ car }}</pre></option>
+                        {% endfor %}
+                    </datalist>
+                </div>
+                <!--Advanced Search-->
+                <div><a href="advanced_search"><i class="fas fa-sliders-h"></i> Pesquisa Avançada</a></div>
+        </br>
+                <!--2 Drawing-->
+               <div class="row justify-content-md-center no-gutters">
+                    <div id="circle" class="col-6">
+                        <svg height="70" width="340">
+                            <circle cx="35" cy="35" r="35" fill="#ff5909"/>
+                            <text x="35" y="35"
+                                  text-anchor="middle"
+                                  font-size="35px"
+                                  fill="#51005d"
+                                  font-weight="bold"
+                                  alignment-baseline="central"
+                                  > 2
+                            </text>
+                            <text x="74" y="35"
+                                  text-anchor="start"
+                                  font-size="30px"
+                                  fill="white"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >Escolha sua Cidade
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+        </br>
+                 <div class="row justify-content-center">
+                     <div class="col-auto">
+                        <div class="input-group mb-3">
+                            <input id="city4" class="form-control" name="city2" type="text" list="city2" autofocus placeholder="Ex: Sao Paulo" autocomplete="on">
+                            <div class="input-group-append">
+                                <button class="btn btn-sm" id="delete"><i class="fas fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                         <datalist id="city2">
+                             <select multiple size=10>
+                                 {% for city in cities %}
+                                    <option value="{{ city }}">{{ city }}</option>
+                                 {% endfor %}
+                                 {% for location in locations %}
+                                    <option value="{{ location.city }}">{{ location.city }}</option>
+                                 {% endfor %}
+                             </select>
+                        </datalist>
+                      </div>
+                  </div>
+                <!--Collapse: add manual fuel price  input-->
+                Ou adicione os valores da gasolina e etanol
+                <a id="expand" href="#" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="manual_input2 manual_input3">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="collapse multi-collapse" id="manual_input2">
+                            <div class="card card-body">
+                                <h6 class="card-title">Etanol R$/Litro</h6>
+                                <div class="input-group mb-3">
+                                    <input class="input_fuel" name="ethanol_price" id="ethanol_price1" type="number" step="0.001" placeholder="Ex: 2,99" autocomplete="off" >
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sm" id="delete_ethanol"><i class="fas fa-times-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="collapse multi-collapse" id="manual_input3">
+                            <div class="card card-body">
+                                <h6 class="card-title">Gasolina R$/Litro</h6>
+                                <div id="price" class="input-group mb-3">
+                                    <input class="input_fuel" name="gas_price" id="gas_price1" type="number" step="0.001" placeholder="Ex: 3,99" autocomplete="off" >
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sm" id="delete_gas"><i class="fas fa-times-circle"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </br>
+
+                <!--3 Drawing-->
+                 <div class="row justify-content-md-center no-gutters">
+                    <div class="col-6">
+                        <svg height="70" width="340">
+                            <circle cx="35" cy="35" r="35" fill="#ff5909"/>
+                            <text x="35" y="35"
+                                  text-anchor="middle"
+                                  font-size="35px"
+                                  fill="#51005d"
+                                  font-weight="bold"
+                                  alignment-baseline="central"
+                                  >3
+                            </text>
+                            <text x="74" y="35"
+                                  text-anchor="start"
+                                  font-size="30px"
+                                  fill="white"
+                                  font-weight="normal"
+                                  alignment-baseline="central"
+                                  >Veja o Resultado
+                            </text>
+                        </svg>
+                    </div>
+                 </div>
+                    <!--hidden car.id input-->
+                    <input type="hidden" name="answer" id="answer-hidden" />
+                    <button class="btn" type="submit" value="send" id="submit">Enviar</button>
+             </form>
+    </br>
+
+            <div
+                id="selected_city" data-selected_city="{{ city2 }}">
+            </div>
+
+            <div
+                id="loading">
+            </div>
+
+            <div container-fluid>
+                <div class="row justify-content-center">
+                    <div id="results" class="col-auto">
+                    </div>
+                </div>
+            </div>
+
+            <h6 id="car_summary"></h6>
+            <a id="knowmore1" data-toggle="collapse" href="#knowmore2" aria-expanded="false" aria-controls="knowmore2">
+            </a>
+            <div class="collapse" id="knowmore2">
+                <ul id="knowmore3">
+                </ul>
+            </div>
+
+        </br>
+        </br>
+
+
+        </div>
+
+    </div>
+    <footer>
+        Desenvolvido por Leandro Almeida • leandro.jr@outlook.com
+    </footer>
+
+{% endblock %}

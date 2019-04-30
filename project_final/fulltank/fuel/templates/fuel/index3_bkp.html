@@ -1,0 +1,58 @@
+{% extends "fuel/base.html" %}
+
+{% block title %}
+    Comparador
+{% endblock %}
+
+{% block body %}
+    <h1>The Comparativo is easy to use. Just follow the three steps below</h1>
+    <h2>1 - What's your car?</h2>
+    <form id="myForm" action="{% url 'car_city5' %}" method="post">
+         {% csrf_token %}
+    <div id="search" class="input-container">
+        <i class="fa fa-search icon"></i>
+        <input class="input-field" id="answer" type="text" list="car2" autofocus placeholder="Enter your car" autocomplete="on">
+        <button id="delete_car">Delete</button>
+    </div>
+     <datalist id="car2">
+            {% for car in cars %}
+                <option data-value="{{ car.id }}">{{ car }}</option>
+            {% endfor %}
+     </datalist>
+    <div><a href="advanced_search">Advanced Search</a></div>
+
+    <h2>2 - Where are you going to fill the tank?</h2>
+    <div class="input-container">
+        <input id="city4"  name="city2" type="text" list="city2" autofocus placeholder="Enter your city" autocomplete="on">
+        <button id="delete">Delete</button>
+    </div>
+     <datalist id="city2">
+         <select multiple size=10>
+             <option value="{{ city }}">{{ location.city }}</option>
+            {% for location in locations %}
+                <option value="{{ location.city }}">{{ location.city }}</option>
+            {% endfor %}
+         </select>
+    </datalist>
+
+
+
+     <h2>3 - Click to see the results</h2>
+        <input type="hidden" name="answer" id="answer-hidden" />
+        <input type="submit" value="send" id="submit"/>
+    </form>
+
+    <div
+      id="selected_city" data-selected_city="{{ city2 }}">
+      </div>
+
+    <div
+      id="city4">
+      </div>
+
+<h4 id="car_summary1"></h4>
+<div id="car_summary2"></div>
+<div id="car_summary3"></div>
+
+
+{% endblock %}

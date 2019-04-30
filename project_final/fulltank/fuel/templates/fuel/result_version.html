@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="car5">
+        {% for version in versions %}
+            <li class="car6">
+                {{ version }}
+            </li>
+        {% endfor %}
+    </ul>
+ <form action="{% url 'car_city3' %}" method="post">
+    {% csrf_token %}
+     <select name="car5">
+        {% for version in versions %}
+            <option value="{{ version }}">{{ version }}</option>
+        {% endfor %}
+     </select>
+    <input type="submit" value="Send" />
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 id="fuel_price">Your location is:</h3>
+    {% for city in cities %}
+        {{ city }}
+    {% endfor %}
+    <form action="{% url 'car_city2' %}" method="post">
+    {% csrf_token %}
+     <select name="car4">
+        {% for model in models %}
+            <option value="{{ model }}">{{ model }}</option>
+        {% endfor %}
+     </select>
+    <input type="submit" value="Send" />
+    </form>
+
+</body>
+</html>

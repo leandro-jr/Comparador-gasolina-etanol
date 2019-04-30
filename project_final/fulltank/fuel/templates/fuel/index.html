@@ -1,0 +1,150 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="{% static 'fuel/index.js' %}"></script>
+    <style>
+        <!--datalist {-->
+            <!--display: none;-->
+        <!--}-->
+    </style>
+</head>
+<body>
+<h4 id="car_sumary">The price for {{ brand }} {{ model }} in {{ city }} {{ state }} is {{ km_price_ethanol_city }} R$/km for city ethanol and {{ km_price_gas_city }} R$/km for city gasoline</h4>
+<h3>Lower price per kilometer is {{ lower_price }}. {{ message }}</h3>
+
+{% if brands %}
+<form action="{% url 'car_city' %}" method="post">
+    {% csrf_token %}
+    <!--<select name="car1">-->
+        <!--{% for fuel in fuels %}-->
+            <!--<option value="{{ fuel.id }}">{{ fuel.brand }} - {{ fuel.model }} - {{ fuel.version }}</option>-->
+        <!--{% endfor %}-->
+    <!--</select>-->
+    <!--<select name="car2">-->
+        <!--{% for fuel in fuels %}-->
+            <!--<option value="{{ fuel.id }}">{{ fuel.brand }}</option>-->
+        <!--{% endfor %}-->
+    <!--</select>-->
+     <select name="car3">
+        {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+        {% endfor %}
+    </select>
+    <!--<select name="city1">-->
+        <!--{% for city in cities %}-->
+            <!--<option value="{{ city.city }}">{{ city }}</option>-->
+        <!--{% endfor %}-->
+    <!--</select>-->
+    <!--<select name="price1">-->
+        <!--{% for price in prices %}-->
+            <!--<option value="{{ price.id }}">{{ price.city }} - {{ price.state }}</option>-->
+        <!--{% endfor %}-->
+    <!--</select>-->
+    <input type="submit" value="Send" />
+</form>
+{% endif %}
+<hr>
+
+{% if models %}
+<form action="{% url 'car_city2' %}" method="post">
+    {% csrf_token %}
+     <select name="car4">
+        {% for model in models %}
+            <option value="{{ model }}">{{ model }}</option>
+        {% endfor %}
+     </select>
+    <input type="submit" value="Send" />
+</form>
+{% endif %}
+
+{% if versions %}
+ <form action="{% url 'car_city3' %}" method="post">
+    {% csrf_token %}
+     <select name="car5">
+        {% for version in versions %}
+            <option value="{{ version }}">{{ version }}</option>
+        {% endfor %}
+     </select>
+     <select name="city1">
+        {% for city in cities %}
+            <option value="{{ city.city }}">{{ city }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Send" />
+</form>
+{% endif %}
+
+{% if car %}
+    <ul class="car5">
+        <li>{{ car }}</li>
+        <li>{{ price }}</li>
+    </ul>
+{% endif %}
+
+<hr>
+<form action="{% url 'location' %}" method="post">
+    {% csrf_token %}
+    <input name="city" placeholder="Enter location (minimum of 3 letters)" type="text" autocomplete="on"/>
+    <input type="submit" value="Send" />
+</form>
+
+<hr>
+<form action="{% url 'location2' %}" method="post">
+    {% csrf_token %}
+     <select name="city2">
+        {% for location in locations %}
+            <option value="{{ location.city }}">{{ location }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Send" />
+</form>
+<hr>
+<form action="{% url 'location3' %}" method="post">
+    {% csrf_token %}
+    <input name="city20" list="city20">
+     <datalist id="city20">
+            {% for location in locations %}
+                <option value="{{ location.city }}">{{ location.city }}</option>
+            {% endfor %}
+    </datalist>
+    <input type="submit" value="enviar" />
+</form>
+
+<hr>
+<div class="dropdown">
+  <button id="button" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput">
+      {% for location in locations %}
+        <a href=value="#{{ location.city }}">{{ location.city }}</a>
+      {% endfor %}
+    <a href="#about">About</a>
+  </div>
+</div>
+<!--<h3 id="car_consumption">Fuel Consumption</h3>-->
+    <!--<ul class="car1">-->
+        <!--{% for fuel in fuels %}-->
+            <!--<li class="car2">-->
+                <!--{{ fuel }}-->
+            <!--</li>-->
+        <!--{% endfor %}-->
+    <!--</ul>-->
+<!--<hr>-->
+<!--<h3 id="fuel_price">Fuel Price</h3>-->
+    <!--<ul class="price1">-->
+        <!--{% for price in prices %}-->
+            <!--<li class="price2">-->
+                <!--{{ price }}-->
+            <!--</li>-->
+        <!--{% endfor %}-->
+    <!--</ul>-->
+<hr>
+
+
+</body>
+</html>

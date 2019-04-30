@@ -1,0 +1,54 @@
+{% extends "fuel/base4.html" %}
+
+{% block title %}
+    Comparador - FAQ
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h5 id="opening">Se sua dúvida não estiver respondida aqui, envie-a através de <strong><a href="contact">CONTACT</a></strong></h5>
+        <h5 class="question">O que é o Comparados Gasolina x Etanol?</h5>
+        <p class="answer">O Comparador Gasolina x Etanol calcula qual combustível é mais barato para abastecer seu
+            carro usando os preços do etanol e gasolina e quantos km/l seu veículo faz na cidade e na estrada.</p>
+        <h5 class="question">Como utilizar o Comparados Gasolina x Etanol?</h5>
+        <p class="answer">O Comparador Gasolina x Etanol é fácil de usar, são apenas três passos:
+            <ol>
+                <li>1. Digite o seu veículo e escolha a opção correta;</li>
+                <li>2. Digite sua cidade e escolha a opção correta (ou entre os valores diretamente);</li>
+                <li>3. Aperte "Enviar" e veja os resultados de qual combustível é mais barato para abastercer na cidade e na estrada.</li>
+            </ol>
+        </p>
+        <h5 class="question">Qual a diferença de utilizar a Pesquisa Avançada?</h5>
+        <p class="answer">Caso tenha dificuldades de encontrar seu veículo ou sua cidade, utilize a Pesquisa Avançada. Nela a pesquisa é feita por etapas,
+         facilitando encontrar seu carro e sua cidade.</p>
+        <h5 class="question">Posso ter certeza que os resultados apresentados são corretos?</h5>
+        <p class="answer">Particularidades do seu carro e do seu estilo de dirigir não são levadas em consideração pelo
+            Comparador. Os resultados apresentados devem ser corretos para grande maioria dos motoristas.</p>
+        <h5 class="question">De onde vem as informações de consumo dos veículos?</h5>
+        <p class="answer">Os dados usados no site são obtidos através de medições do INMETRO no Programa Brasileiro
+        de Etiquetagem - PBE.</p>
+        <h5 class="question">De onde vem as informações do preço dos combustíveis?</h5>
+        <p class="answer">Os valores dos combustíveis usados no site são obtidos pela Agência Nacional de Petróleo - ANP através
+        da Superintendência de Defesa da Concorrência, estudo e Regulação Econômica. Os dados são atualizados mensalmente.
+            Para ver qual a última atualização, clique em <strong>+Detalhes</strong> nos resultados.</p>
+        <h5 class="question">Como os resultados são calculados?</h5>
+        <p class="answer">O Comparador usa como entrada duas informações: sua cidade e seu veículo. Com a sua cidade são obtidos
+            os preços médios do etanol e gasolina a serem usados nos calculos (alternativamente, você pode entrar os valores
+            de etanol e gasolina que deseja usar). Com o seu veículo são obtidos quantos km/l seu carro faz na cidade e na estrada
+            para etanol e gasolina. Dividindo o preço médio do combustível por quantos quilômetros por litro seu veículo faz,
+             temos o preço por quilômetro (R$/l). O combustível com menor preço por quilômetro é aparesentado nos resultados
+            para cidade e para estrada. Para ver os valores utilizados nos cálculos, clique em <strong>+Detalhes</strong> nos resultados.</p>
+
+    </br>
+    </br>
+
+    </div>
+
+    <!--<div class="container-fluid">-->
+        <footer class="footer">
+            Developed by Leandro Almeida • leandro.jr@outlook.com
+        </footer>
+    <!--</div>-->
+
+{% endblock %}

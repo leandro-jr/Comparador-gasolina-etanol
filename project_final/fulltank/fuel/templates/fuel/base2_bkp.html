@@ -1,0 +1,16 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'fuel/styles2.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="{% static 'fuel/advanced.js' %}"></script>
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

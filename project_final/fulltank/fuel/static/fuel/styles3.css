@@ -1,0 +1,131 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    background: #ff5909;
+}
+
+#desktop {
+    width: 310px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 310px;
+    background-repeat: no-repeat;
+}
+
+#mobile {
+    width: 270px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 270px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#mobile_small {
+    width: 240px;
+    height: 64px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 240px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+@media screen and (max-width: 365px) {
+    #mobile_small {
+        display: inline-block;
+    }
+    #desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 366px) and (max-width: 399px) {
+    #mobile {
+        display: inline-block;
+    }
+    #mobile_small {
+        display: none;
+    }
+    #desktop {
+        display: none;
+    }
+}
+
+ul {
+    list-style-type: none;
+    color: #51005d;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    color: #51005d;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#opening {
+    padding-top: 24px;
+}
+
+.question {
+    padding-top: 24x;
+    margin-top: 30px;
+    color: #51005d;
+}
+
+
+.btn {
+    background-color: #51005d;
+    color: white;
+}
+
+.input-group-text {
+    background-color: #51005d;
+    color: white;
+}
+
+.btn:hover {
+    color: #ff5909;
+}
+
+#feedback {
+    padding-top: 20px;
+    color: #51005d;
+}
+
+
+
+footer {
+    background: #51005d;
+    margin: 0 0 0 0;
+    padding: 10px 10px;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+/*.input-container input{
+  *  width: 200px;
+   * height: 20px;
+    *padding-right: 60px;
+*}
+
+*.input-container button {
+*    margin-left: -60px;
+*}*/

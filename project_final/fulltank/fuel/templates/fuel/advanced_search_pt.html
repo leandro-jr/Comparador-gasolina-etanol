@@ -1,0 +1,109 @@
+{% extends "fuel/base2_pt.html" %}
+
+{% block title %}
+    Comparador - Pesquisa Avançada
+{% endblock %}
+
+{% block body %}
+    <div class="bg">
+    <div class="container-fluid">
+
+        <div>
+            <a href="advanced_search">
+            <button class="btn btn-sm" id="restart">Reiniciar</button></a>
+        </div>
+
+        <!--Year form-->
+        {% if years %}
+        <h2 id="opening">Ano do Carro</h2>
+        <form id="yearForm" action="{% url 'car_city' %}" method="post">
+        {% csrf_token %}
+            <div class="form-row justify-content-center">
+                <div class="col-auto">
+                    <div class="input-group mb-3">
+                         <select class="form-control" id="year1" name="year">
+                            {% for year in years %}
+                                <option value="{{ year }}">{{ year }}</option>
+                            {% endfor %}
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn">Seguir</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </form>
+        {% endif %}
+
+        <!--Brand form-->
+        <h2 id="brand"></h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                    <form id="brandForm" action="{% url 'car_city2' %}" method="post"></form>
+            </div>
+        </div>
+
+        <!--Model form-->
+        <h2 id="model"></h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <form id="modelForm" action="{% url 'car_city3' %}" method="post"></form>
+            </div>
+        </div>
+
+        <!--Version form-->
+        <h2 id="version"></h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <form id="versionForm" action="{% url 'car_city4' %}" method="post"></form>
+            </div>
+        </div>
+
+        <!--Engine form-->
+        <h2 id="engine"></h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <form id="engineForm" action="{% url 'car_city5' %}" method="post"></form>
+            </div>
+        </div>
+
+        <!--City form-->
+        <h2 id="city"></h2>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <form id="cityForm" action="{% url 'car_city6' %}" method="post"></form>
+            </div>
+        </div>
+
+        <div
+            id="loading">
+        </div>
+
+        <div container-fluid>
+            <div class="row justify-content-center">
+                <div id="results" class="col-auto">
+                </div>
+            </div>
+        </div>
+
+        <h6 id="car_summary"></h6>
+        <a id="knowmore1" data-toggle="collapse" href="#knowmore2" aria-expanded="false" aria-controls="knowmore2">
+        </a>
+        <div class="collapse" id="knowmore2">
+            <ul id="knowmore3">
+            </ul>
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+
+    </div>
+    <div class="container-fluid">
+        <footer class="footer">
+            Desenvolvido por Leandro Almeida • leandro.jr@outlook.com
+        </footer>
+    </div>
+    </div>
+{% endblock %}

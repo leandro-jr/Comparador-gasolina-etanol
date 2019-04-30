@@ -1,0 +1,33 @@
+{% extends "fuel/base.html" %}
+
+{% block title %}
+    Comparador
+{% endblock %}
+
+{% block body %}
+    <h1>The Comparativo is easy to use. Just follow the three steps below</h1>
+    <h2>1 - Where are you going to fill the tank?</h2>
+    <form action="{% url 'car_city4' %}" method="post">
+        {% csrf_token %}
+        <input name="city2" type="text" list="city2" placeholder="Enter your city" autocomplete="on">
+         <datalist id="city2">
+             <select multiple size=10>
+                {% for location in locations %}
+                    <option value="{{ location.city }}">{{ location.city }}</option>
+                {% endfor %}
+             </select>
+        </datalist>
+
+     <h2>2 - What's your car?</h2>
+        <input name="selected" id="answerInput" type="text" list="car2" placeholder="Enter your car" autocomplete="on">
+         <datalist id="car2">
+                {% for car in cars %}
+                    <option data-value="{{ car.id }}">{{ car }}</option>
+                {% endfor %}
+         </datalist>
+
+     <h2>3 - Click to see the results</h2>
+        <input type="hidden" name="answer" id="answerInput-hidden" />
+    </form>
+
+{% endblock %}

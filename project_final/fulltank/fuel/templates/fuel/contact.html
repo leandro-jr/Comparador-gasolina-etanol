@@ -1,0 +1,52 @@
+{% extends "fuel/base3.html" %}
+
+{% block title %}
+    Comparador - Contact
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+
+        <h5 id="feedback">{{ message }}</h5>
+        <h6 id="opening">For suggestions, bugs or doubts, please send an email to leandro.jr@outlook.com
+         or fill the form below:</h6>
+        </br>
+        <form id="contactForm" action="{% url 'contact_input' %}" method="post">
+        {% csrf_token %}
+            <!--<div class="justify-content-center">-->
+                <div class="form-group">
+                    <label class="sr-only" for="input_contact">Enter your text here</label>
+                    <textarea name="contact_input" class="form-control" id="input_contact" rows="5" placeholder="Enter your text here" autocomplete="off"></textarea>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-auto">
+                    <!--<div class="form-group">-->
+                        <label class="sr-only" for="inputemail">Email</label>
+                        <div class="input-group mb-2">
+                            <div id="email" class="input-group-prepend">
+                              <div  class="input-group-text">email</div>
+                            </div>
+                            <input name="email" class="form-control" id="inputemail" type="email" placeholder="name@example.com" autocomplete="off"/>
+                        </div>
+                    </div>
+                    <!--</div>-->
+                    <div class="col-auto">
+                        <button id="contact_submit" type="submit" class="btn mb-2">Submit</button>
+                    </div>
+                </div>
+            <!--</div>-->
+
+        </form>
+
+
+        </br>
+
+    </div>
+
+    <div class="container-fluid">
+        <footer class="footer">
+            Developed by Leandro Almeida • leandro.jr@outlook.com
+        </footer>
+    </div>
+
+{% endblock %}

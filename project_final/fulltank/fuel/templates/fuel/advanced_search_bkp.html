@@ -1,0 +1,37 @@
+{% extends "fuel/base2.html" %}
+
+{% block title %}
+    Comparador
+{% endblock %}
+
+{% block body %}
+
+    {% if brands %}
+    <h2>1 - What's your car brand?</h2>
+    <form id="brandForm" action="{% url 'car_city' %}" method="post">
+    {% csrf_token %}
+     <select id="car3" name="car3">
+        {% for brand in brands %}
+            <option value="{{ brand }}">{{ brand }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Send" />
+    </form>
+    {% endif %}
+
+    <h2 id="model"></h2>
+    <form id="modelForm" action="{% url 'car_city' %}" method="post"></form>
+
+    <h2 id="version"></h2>
+    <form id="versionForm" action="{% url 'car_city3' %}" method="post"></form>
+
+    <h2 id="city"></h2>
+    <form id="cityForm" action="{% url 'car_city4' %}" method="post"></form>
+
+    <h4 id="car_summary1"></h4>
+    <div id="car_summary2"></div>
+    <div id="car_summary3"></div>
+
+
+
+{% endblock %}
