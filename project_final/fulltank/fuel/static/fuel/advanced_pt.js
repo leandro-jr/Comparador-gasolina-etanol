@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#brand').innerHTML = "Marca do Carro";
             var div2 = document.createElement('div');
             div2.className = 'input-group-append';
-            div2.innerHTML = '<button class="btn">Seguinte</button>';
+            div2.innerHTML = '<button class="btn">Próximo</button>';
             div.appendChild(div2);
         }
         // Add data to send with request
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#version').innerHTML = "Versão do Carro";
             var div2 = document.createElement('div');
             div2.className = 'input-group-append';
-            div2.innerHTML = '<button class="btn">Selecionar</button>';
+            div2.innerHTML = '<button class="btn">Próximo</button>';
             div.appendChild(div2);
         }
         // Add data to send with request
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#engine').innerHTML = "Motor do Carro";
             var div2 = document.createElement('div');
             div2.className = 'input-group-append';
-            div2.innerHTML = '<button class="btn"><i class="fas fa-arrow-circle-right"></i></button>';
+            div2.innerHTML = '<button class="btn">Próximo</button>';
             div.appendChild(div2);
         }
         // Add data to send with request
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#city').innerHTML = "Cidade";
             var div2 = document.createElement('div');
             div2.className = 'input-group-append';
-            div2.innerHTML = '<button class="btn"><i class="fas fa-long-arrow-alt-right"></i></button>';
+            div2.innerHTML = '<button class="btn">Próximo</button>';
             div.appendChild(div2);
         }
         // Add data to send with request
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('#car_city').innerHTML = car_city
             }
             else {
-                document.querySelector('#car_city').innerHTML = 'NA CIDADE É MAIS BARATO USAR <strong id="' + car_city + '">' + car_city + '</strong>';
+                document.querySelector('#car_city').innerHTML = '&nbsp&nbspNA CIDADE É MAIS BARATO USAR <strong id="' + car_city + '">' + car_city + '</strong>&nbsp&nbsp';
                     document.querySelector('#car_road').innerHTML = 'NA ESTRADA É MAIS BARATO USAR <strong id="' + car_road + '">' + car_road + '</strong>';
             }
 

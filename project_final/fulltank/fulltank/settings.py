@@ -26,7 +26,7 @@ SECRET_KEY = '-&(hp3q&)3zdvfe#ur3wmabwse8)d!*b=qrlcousek6jdve08s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.2.8', '192.168.2.7', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['192.168.0.3', '127.0.0.1', '127.0.1.1', 'localhost']
 
 
 # Application definition
@@ -77,14 +77,17 @@ WSGI_APPLICATION = 'fulltank.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': os.getenv("DATABASE_PWD"),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'comparador_db',
+        'USER': 'leandro',
+        'PASSWORD': 'selenita',
         'HOST': 'localhost',
         'PORT': '5432',
+        'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
+
+# os.getenv("DATABASE_PWD"),
 
 
 
@@ -125,6 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/leandro/CS50W/comparador/lpdaj/project_final/static'
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 

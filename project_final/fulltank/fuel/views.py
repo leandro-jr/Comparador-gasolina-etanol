@@ -14,18 +14,13 @@ def index(request):
     try:
         # oder by year(in reverse), brand, model, version and engine
         cars = FCShort.objects.all().order_by('-year', 'brand', 'model', 'version', 'engine')
-        locations = Cities.objects.all()
+        locations = Cities.objects.all().order_by('city')
 
     except FuelConsumption.DoesNotExist:
         return render(request, "fuel/error.html", {"message": "We are experiencing a problem on our system. Please try again in a few minutes"})
     except Cities.DoesNotExist:
         return render(request, "fuel/error.html", {"message": "We are experiencing a problem on our system. Please try again in a few minutes"})
 
-    # obtain city using IP
-    reader = geoip2.database.Reader('GeoLite2-City_20190326/GeoLite2-City.mmdb')
-    response = reader.city('201.6.197.29')
-    city = (response.subdivisions.most_specific.name).upper()
-    reader.close()
 
     # present major Brazilian cities first on the datalist
     cities = ['SAO PAULO', 'RIO DE JANEIRO', 'BELO HORIZONTE', 'BRASILIA', 'PORTO ALEGRE',
@@ -44,14 +39,10 @@ def advanced_search(request):
 
     years = ['2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009']
 
-    reader = geoip2.database.Reader('GeoLite2-City_20190326/GeoLite2-City.mmdb')
-    response = reader.city('201.6.197.29')
-    city = (response.subdivisions.most_specific.name).upper()
-    reader.close()
 
     context = {
         "years": years,
-        "city": city,
+        # "city": city,
     }
 
     return render(request, "fuel/advanced_search_pt.html", context)
@@ -124,7 +115,7 @@ def load(request):
 
 
     # count = 0
-    # city_list = []
+    # # city_list = []
     # city_dict = {}
     # f = open("price_mar19.csv")
     # reader = csv.reader(f)
@@ -396,7 +387,8 @@ def car_city6(request):
 
     # create message with summary od car and city
     city = city.title()
-    message = str(car) + ", combustível: " + str(fuel_type) + ", em " + str(city) + " - " + str(state)
+    # message = str(car) + ", combustível: " + str(fuel_type) + ", em " + str(city) + " - " + str(state)
+    message = str(car) + " • " + str(city) + " - " + str(state)
 
     ethanol_price = avg_price_ethanol
     gas_price = avg_price_gas
@@ -448,20 +440,21 @@ def search_car_city(request):
     city = ""
     if (ethanol_price == "") or (gas_price == "") or (ethanol_price == "undefined") or (gas_price == "undefined"):
         try:
-            city = request.POST.get("city2")
+            city_input = request.POST.get("city2")
         except KeyError:
             message = "Nenhuma cidade foi selecionada"
             message_city = ""
             message_road = ""
             return JsonResponse({"success": 0, "message": message, "message_city": message_city, "message_road": message_road})
     # otherwise, they should be used
-    if not city:
+    if not city_input:
         avg_price_ethanol = float(ethanol_price)
         avg_price_gas = float(gas_price)
-        city_search = city
+        city_search = city_input.upper()
     # obtain fuel prices from db using selected city
     else:
         try:
+            city = city_input.upper()
             city_search = Cities.objects.get(city=city)
             price_ethanol = Price.objects.filter(city=city, product="ETANOL HIDRATADO")
             price_gas = Price.objects.filter(city=city, product="GASOLINA COMUM")
@@ -561,7 +554,7 @@ def search_car_city(request):
             city_search_state = state.state_short
         except States.DoesNotExist:
             city_search_state = city_search.state.title()
-        message = str(car) + ", combustível: " + str(fuel_type) + ", em " + str(city_search_city) + " - " + str(city_search_state)
+        # message = str(car) + ", combustível: " + str(fuel_type) + ", em " + str(city_search_city) + " - " + str(city_search_state)
         message = str(car) + " • " + str(city_search_city) + " - " + str(city_search_state)
 
         ethanol_price = avg_price_ethanol

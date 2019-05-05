@@ -3,7 +3,7 @@ from django.db import models
 
 
 class FuelConsumption(models.Model):
-    year = models.CharField(max_length=64)
+    year = models.CharField(max_length=191)
     brand = models.CharField(max_length=64)
     model = models.CharField(max_length=64)
     engine = models.CharField(max_length=64)
@@ -19,7 +19,7 @@ class FuelConsumption(models.Model):
         return f"{self.brand} {self.model} {self.version} {self.engine}({self.year})"
 
 class FCShort(models.Model):
-    year = models.CharField(max_length=64, default=0)
+    year = models.CharField(max_length=191, default=0)
     brand = models.CharField(max_length=64, default=0)
     model = models.CharField(max_length=64, default=0)
     engine = models.CharField(max_length=64, default=0)

@@ -1,0 +1,250 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    background: white;
+}
+
+#nav-color {
+    background: #51005d;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+}
+
+html {
+    background: #51005d;
+}
+
+#fake {
+    display: none;
+}
+
+#desktop {
+    width: 310px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 310px;
+    background-repeat: no-repeat;
+}
+
+#mobile {
+    width: 270px;
+    height: 80px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 270px;
+    background-repeat: no-repeat;
+}
+
+#mobile_small {
+    width: 240px;
+    height: 64px;
+    text-indent: -99999px;
+    background-image: url("logo13.png");
+    background-size: 240px;
+    background-repeat: no-repeat;
+}
+
+.bg {
+    background-image: url("background_color2.jpg");
+    background-size: cover;
+    background-position:center;
+    flex-grow: 1;
+    overflow-y:hidden;
+    min-height: 86vh;
+}
+
+svg circle {
+    box-shadow: black 0 0 20px;
+    border: 1px solid white;
+}
+
+.question {
+    padding: 5px;
+}
+
+#instructions {
+    padding-top: 20px;
+}
+
+#instructions2 {
+    font-size: 18px;
+    color: #ff4307;
+    padding: 0 5px;
+}
+
+.card {
+    background: none;
+}
+
+#gas_price1 {
+    min-width: auto;
+}
+
+#city4, #answer {
+    min-width: 240px;
+}
+
+.col-auto {
+    text-align:justify;
+}
+
+.form-row {
+    text-align:justify;
+}
+
+.form-control {
+    text-align:justify;
+}
+
+.title {
+    color: #51005d;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.btn {
+    background: #ff5909;
+    color: white;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+a {
+    color: #ff5909;
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#knowmore1 {
+    color: #51005d;
+    font-size: 14px;
+}
+
+datalist {
+        display: none;
+}
+
+textarea, input {
+    padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#etanol {
+    background: #008D23;
+    text-transform: uppercase;
+}
+
+#gasolina {
+    background: #ca1919;
+    text-transform: uppercase;
+}
+
+table {
+   border-collapse: collapse;
+   border: 1px solid #626262;
+   margin-bottom: 10px;
+}
+
+td, th {
+  text-align: center;
+  padding: 6px;
+}
+
+#car_summary {
+    color: #ff5909;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    color: #51005d;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: #51005d;
+    padding: 10px 10px;
+    color: white;
+    font-size: 10px;
+}
+
+#mobile {
+        display: none;
+    }
+
+#mobile_small {
+        display: none;
+    }
+
+@media screen and (max-width: 365px) {
+    #mobile_small {
+        display: inline-block;
+    }
+    #desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 366px) and (max-width: 399px) {
+    #mobile {
+        display: inline-block;
+    }
+    #mobile_small {
+        display: none;
+    }
+    #desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 331px) and (max-width: 770px) {
+    .input_fuel {
+        margin-left: 6px;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 330px) {
+    //.input-group input {
+    .input_fuel {
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    //.input-group input {
+    .input_fuel {
+        margin-left: 0;
+    }
+}
+
+@keyframes expand {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+div#results {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: expand;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}

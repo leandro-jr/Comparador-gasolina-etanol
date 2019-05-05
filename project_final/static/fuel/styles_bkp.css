@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    color: blue;
+}
+
+datalist {
+        display: none;
+}
+
+.input-container input{
+    width: 200px;
+    height: 20px;
+    padding-right: 60px;
+}
+
+.input-container button {
+    margin-left: -60px;
+}
+
+@keyframes expand {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    33% {
+        opacity: 1;
+        height: 40px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    66% {
+        opacity: 1;
+        height: 80px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 120px;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.manual_input {
+    animation-name: expand;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
