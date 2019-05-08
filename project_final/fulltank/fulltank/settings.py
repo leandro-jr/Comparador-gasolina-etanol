@@ -26,7 +26,7 @@ SECRET_KEY = '-&(hp3q&)3zdvfe#ur3wmabwse8)d!*b=qrlcousek6jdve08s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.3', '127.0.0.1', '127.0.1.1', 'localhost']
+ALLOWED_HOSTS = ['134.209.38.212', 'www.gasolinaetanol.com.br', 'localhost']
 
 
 # Application definition
@@ -78,15 +78,11 @@ WSGI_APPLICATION = 'fulltank.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comparador_db',
-        'USER': 'leandro',
-        'PASSWORD': 'selenita',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'OPTIONS': {'charset': 'utf8mb4'},
+        'OPTIONS': {
+            'read_default_file': '/lpdaj/project_final/auth/mysql.cnf',
+        },
     }
 }
-
 # os.getenv("DATABASE_PWD"),
 
 
@@ -128,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/leandro/CS50W/comparador/lpdaj/project_final/static'
+STATIC_ROOT = '/lpdaj/project_final/static'
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
 

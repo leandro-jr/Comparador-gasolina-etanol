@@ -4,7 +4,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139748764-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
+
+ 	 gtag('config', 'UA-139748764-1');
+	</script>
         <title>{% block title %}{% endblock %}</title>
+	<META NAME="Description" CONTENT="Escolha seu carro e cidade e veja qual combustível vale mais a pena para o seu carro, Atualizado em: Março 2019">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="{% static 'fuel/pump2.png' %}"/>
