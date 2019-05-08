@@ -68,7 +68,10 @@ svg circle {
 }
 
 #instructions {
+    font-size: 22px;
     padding-top: 20px;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 #instructions2 {

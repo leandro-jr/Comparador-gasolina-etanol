@@ -128,8 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('#car_city').innerHTML = car_city
             }
             else {
-                document.querySelector('#car_city').innerHTML = '&nbsp&nbspNA CIDADE É MAIS BARATO USAR <strong id="' + car_city + '">' + car_city + '</strong>&nbsp&nbsp';
-                document.querySelector('#car_road').innerHTML = 'NA ESTRADA É MAIS BARATO USAR <strong id="' + car_road + '">' + car_road + '</strong>';
+                document.querySelector('#car_city').innerHTML = '&nbsp&nbspNA CIDADE É MAIS VANTAJOSO USAR <strong id="' + car_city + '">' + car_city + '</strong>&nbsp&nbsp';
+                document.querySelector('#car_road').innerHTML = 'NA ESTRADA É MAIS VANTAJOSO USAR <strong id="' + car_road + '">' + car_road + '</strong>';
             }
 
             // insert details

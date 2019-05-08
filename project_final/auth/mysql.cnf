@@ -1,0 +1,5 @@
+[client]
+database = 'comparador_db'
+user = 'leandro'
+password = 'Selenita1,'
+default-character-set = 'utf8mb4'

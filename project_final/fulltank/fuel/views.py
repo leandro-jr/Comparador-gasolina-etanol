@@ -1,6 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect, Http404, JsonResponse
 from django.shortcuts import render
-import geoip2.database
+# import geoip2.database
 import csv
 import time
 from django.core.mail import EmailMessage
@@ -114,33 +114,33 @@ def load(request):
 
 
 
-    # count = 0
-    # # city_list = []
-    # city_dict = {}
-    # f = open("price_mar19.csv")
-    # reader = csv.reader(f)
-    # for date, product, region, state, city, avg_price in reader:
-    #     p = Price(date=date, product=product, region=region, state=state, city=city, avg_price=avg_price)
-    #     p.save()
-    #     # city_state = city + '-' + state
-    #     # if city_state not in city_list:
-    #     #     city_list.append(city_state)
-    #
-    #     city_dict[city] = state
-    #     count += 1
-    #     # print(f"city number {count} added")
-    # print(f"{count} cities loaded")
-    # f.close()
-    #
-    # # print(f"city_list: {city_list}")
-    # # print(f"city_dict: {city_dict}")
-    #
-    # for city, state in city_dict.items():
-    #     print(city)
-    #     print(state)
-    #     c = Cities(city=city, state=state)
-    #     c.save()
+   # count = 0
+    # city_list = []
+   # city_dict = {}
+   # f = open("price_maio19_w01.csv")
+   # reader = csv.reader(f)
+   # for date, product, region, state, city, avg_price in reader:
+   #     p = Price(date=date, product=product, region=region, state=state, city=city, avg_price=avg_price)
+   #     p.save()
+   #     # city_state = city + '-' + state
+   #     # if city_state not in city_list:
+   #     #     city_list.append(city_state)
+   #     city_dict[city] = state
+   #     count += 1
+   #     # print(f"city number {count} added")
+   # print(f"{count} cities loaded")
+   # f.close()
+    
+   #  # print(f"city_list: {city_list}")
+   #  # print(f"city_dict: {city_dict}")
+    
+   # for city, state in city_dict.items():
+   #     print(city)
+   #     print(state)
+   #     c = Cities(city=city, state=state)
+   #     c.save()
 
+   # return render(request, "fuel/faq_pt.html") 
 
 def car_city(request):
     """inputs year. With it, filter db and copy brands to a list of unique elements and return the json results"""
@@ -394,7 +394,7 @@ def car_city6(request):
     gas_price = avg_price_gas
 
     # delay for user see loading spinner
-    time.sleep(0.5)
+    # time.sleep(0.5)
 
     # return json
     return JsonResponse({"success": 1, "message": message, "message_city": message_city, "message_road": message_road,
@@ -561,7 +561,7 @@ def search_car_city(request):
         gas_price = avg_price_gas
 
     #delay for user see loading spinner
-    time.sleep(0.5)
+    # time.sleep(0.5)
 
     #return json
     return JsonResponse({"success": 1, "message": message, "message_city": message_city, "message_road": message_road,

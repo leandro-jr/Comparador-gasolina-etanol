@@ -4,16 +4,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139748764-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139748764-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
 
-          gtag('config', 'UA-139748764-1');
-        </script>
+ 	 gtag('config', 'UA-139748764-1');
+	</script>
         <title>{% block title %}{% endblock %}</title>
+	<META NAME="Description" CONTENT="Como saber qual combustível usar: gasolina ou etanol? Escolha seu carro e cidade e veja qual combustível é mais vantajoso para o seu bolso na cidade e na estrada, Atualizado em: Maio 2019">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="{% static 'fuel/pump2.png' %}"/>
@@ -23,6 +24,30 @@
         <script src="{% static 'fuel/index2_pt.js' %}"></script>
     </head>
     <body>
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "HowTo",
+          "name": "Como saber qual combustível usar",
+          "description": "Para saber com qual combustível é mais vantajoso abastecer na estrada ou na cidade, é só escolher seu carro e cidade e calculamos para você",
+          "step": [
+            {
+            "@type": "HowToStep",
+            "text": "Procure pelo seu carro na lista. Ex: digite onix e escolha seu entre os resultados.",
+            "image": "{% static 'fuel/step1.png' %}"
+          }, {
+            "@type": "HowToStep",
+            "text": "Procure pela cidade onde vai abastecer na lista. Ex: digite sao paulo e ecolha entre os resultados. Você também pode digitar os preços da gasolina e etanol se preferir.",
+            "image": "{% static 'fuel/step2.png' %}"
+          }, {
+            "@type": "HowToStep",
+            "text": "Clique em Enviar e veja os resultados de qual combustível vale mais a pena usar: gasolina ou etanol na esstra e na cidade. Clique em +Detalhes se quiser saber detalhes dos cálculos.",
+            "image": "{% static 'fuel/step3.png' %}"
+          }
+        ]
+        }
+        </script>
+
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #51005d;">
             <div class="container">
             <div class="collapse navbar-collapse dual-collapse2 w-100 order-1 order-md-0">
