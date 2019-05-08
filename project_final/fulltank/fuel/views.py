@@ -437,7 +437,7 @@ def search_car_city(request):
         return JsonResponse({"success": 0, "message": message, "message_city": message_city, "message_road": message_road})
 
     # if fuel prices are not entered by user, use the city selected
-    city = ""
+    city_input = ""
     if (ethanol_price == "") or (gas_price == "") or (ethanol_price == "undefined") or (gas_price == "undefined"):
         try:
             city_input = request.POST.get("city2")

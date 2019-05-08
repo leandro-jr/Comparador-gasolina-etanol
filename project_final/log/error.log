@@ -4943,3 +4943,234 @@
 [Sun May 05 17:34:12.348474 2019] [wsgi:error] [pid 4309:tid 140599320053504] [remote 192.168.0.3:38192] Not Found: /favicon.ico
 [Sun May 05 14:34:38.401526 2019] [wsgi:error] [pid 4429:tid 140384710113024] wsgi1
 [Sun May 05 14:34:38.527619 2019] [wsgi:error] [pid 4429:tid 140384710113024] wsgi2
+[Mon May 06 17:00:51.749850 2019] [wsgi:error] [pid 7309:tid 140384726898432] wsgi1
+[Mon May 06 17:00:51.975868 2019] [wsgi:error] [pid 7309:tid 140384726898432] wsgi2
+[Mon May 06 20:00:52.069025 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] mod_wsgi (pid=7309): Exception occurred processing WSGI script '/home/leandro/CS50W/comparador/lpdaj/project_final/fulltank/fulltank/wsgi.py'.
+[Mon May 06 20:00:52.078130 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.078210 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+[Mon May 06 20:00:52.078222 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.connect()
+[Mon May 06 20:00:52.078235 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+[Mon May 06 20:00:52.078242 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.connection = self.get_new_connection(conn_params)
+[Mon May 06 20:00:52.078252 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+[Mon May 06 20:00:52.078259 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return Database.connect(**conn_params)
+[Mon May 06 20:00:52.078270 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+[Mon May 06 20:00:52.078277 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return Connection(*args, **kwargs)
+[Mon May 06 20:00:52.078287 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+[Mon May 06 20:00:52.078293 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     super(Connection, self).__init__(*args, **kwargs2)
+[Mon May 06 20:00:52.078323 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] MySQLdb._exceptions.OperationalError: (1045, "Access denied for user 'www-data'@'localhost' (using password: NO)")
+[Mon May 06 20:00:52.078353 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.078360 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] The above exception was the direct cause of the following exception:
+[Mon May 06 20:00:52.078365 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.078374 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.078543 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.078551 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.078561 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+[Mon May 06 20:00:52.078567 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = self.process_exception_by_middleware(e, request)
+[Mon May 06 20:00:52.078576 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+[Mon May 06 20:00:52.078582 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Mon May 06 20:00:52.078591 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/fulltank/fuel/views.py", line 34, in index
+[Mon May 06 20:00:52.078597 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return render(request, "fuel/index3_pt.html", context)
+[Mon May 06 20:00:52.078608 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+[Mon May 06 20:00:52.078614 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     content = loader.render_to_string(template_name, context, request, using=using)
+[Mon May 06 20:00:52.078624 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+[Mon May 06 20:00:52.078629 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return template.render(context, request)
+[Mon May 06 20:00:52.078638 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+[Mon May 06 20:00:52.078644 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.template.render(context)
+[Mon May 06 20:00:52.078653 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 171, in render
+[Mon May 06 20:00:52.078659 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self._render(context)
+[Mon May 06 20:00:52.078668 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+[Mon May 06 20:00:52.078673 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.nodelist.render(context)
+[Mon May 06 20:00:52.078688 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+[Mon May 06 20:00:52.078694 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     bit = node.render_annotated(context)
+[Mon May 06 20:00:52.078703 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+[Mon May 06 20:00:52.078708 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.render(context)
+[Mon May 06 20:00:52.078717 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+[Mon May 06 20:00:52.078723 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return compiled_parent._render(context)
+[Mon May 06 20:00:52.078732 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 163, in _render
+[Mon May 06 20:00:52.078738 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.nodelist.render(context)
+[Mon May 06 20:00:52.078747 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+[Mon May 06 20:00:52.078752 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     bit = node.render_annotated(context)
+[Mon May 06 20:00:52.078761 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+[Mon May 06 20:00:52.078767 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.render(context)
+[Mon May 06 20:00:52.078776 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+[Mon May 06 20:00:52.078781 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     result = block.nodelist.render(context)
+[Mon May 06 20:00:52.078790 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 937, in render
+[Mon May 06 20:00:52.078796 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     bit = node.render_annotated(context)
+[Mon May 06 20:00:52.078805 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/base.py", line 904, in render_annotated
+[Mon May 06 20:00:52.078810 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self.render(context)
+[Mon May 06 20:00:52.078819 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 166, in render
+[Mon May 06 20:00:52.078825 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     len_values = len(values)
+[Mon May 06 20:00:52.078834 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/models/query.py", line 256, in __len__
+[Mon May 06 20:00:52.078843 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self._fetch_all()
+[Mon May 06 20:00:52.078853 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/models/query.py", line 1242, in _fetch_all
+[Mon May 06 20:00:52.078859 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self._result_cache = list(self._iterable_class(self))
+[Mon May 06 20:00:52.078868 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/models/query.py", line 55, in __iter__
+[Mon May 06 20:00:52.078874 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+[Mon May 06 20:00:52.078883 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1095, in execute_sql
+[Mon May 06 20:00:52.078889 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     cursor = self.connection.cursor()
+[Mon May 06 20:00:52.078898 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 256, in cursor
+[Mon May 06 20:00:52.078903 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return self._cursor()
+[Mon May 06 20:00:52.078912 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 233, in _cursor
+[Mon May 06 20:00:52.078918 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.ensure_connection()
+[Mon May 06 20:00:52.078927 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+[Mon May 06 20:00:52.078932 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.connect()
+[Mon May 06 20:00:52.078941 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+[Mon May 06 20:00:52.078947 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     raise dj_exc_value.with_traceback(traceback) from exc_value
+[Mon May 06 20:00:52.078956 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 217, in ensure_connection
+[Mon May 06 20:00:52.078962 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.connect()
+[Mon May 06 20:00:52.078971 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/base/base.py", line 195, in connect
+[Mon May 06 20:00:52.078976 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     self.connection = self.get_new_connection(conn_params)
+[Mon May 06 20:00:52.078985 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+[Mon May 06 20:00:52.078997 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return Database.connect(**conn_params)
+[Mon May 06 20:00:52.079007 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/MySQLdb/__init__.py", line 84, in Connect
+[Mon May 06 20:00:52.079012 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return Connection(*args, **kwargs)
+[Mon May 06 20:00:52.079021 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/MySQLdb/connections.py", line 164, in __init__
+[Mon May 06 20:00:52.079027 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     super(Connection, self).__init__(*args, **kwargs2)
+[Mon May 06 20:00:52.079047 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] django.db.utils.OperationalError: (1045, "Access denied for user 'www-data'@'localhost' (using password: NO)")
+[Mon May 06 20:00:52.079060 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079065 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079070 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079079 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079131 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.079138 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.079147 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.079153 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.079162 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.079168 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.079177 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.079184 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.079193 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.079199 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.079208 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.079218 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.079228 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.079233 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.079242 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.079248 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.079266 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.079278 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079283 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079288 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079297 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079345 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.079352 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.079361 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.079367 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.079376 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.079381 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.079391 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.079396 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.079406 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.079412 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.079421 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.079426 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.079440 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.079445 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.079454 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.079460 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.079475 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.079486 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079491 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079496 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079504 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079551 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.079558 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.079567 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.079573 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.079582 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.079587 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.079606 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.079610 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.079616 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.079620 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.079625 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.079629 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.079634 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.079640 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.079646 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.079649 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.079658 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.079665 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079668 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079671 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079677 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079706 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.079734 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.079743 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.079747 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.079753 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.079757 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.079772 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.079776 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.079782 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.079785 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.079790 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.079794 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.079799 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.079806 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.079811 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.079815 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.079824 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.079832 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079835 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079838 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079843 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079873 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.079877 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.079883 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.079886 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.079891 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.079895 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.079900 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.079904 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.079909 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.079913 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.079918 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.079922 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.079927 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.079930 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.079940 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.079943 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.079952 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.079959 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079962 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.079965 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.079970 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.079999 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+[Mon May 06 20:00:52.080003 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = get_response(request)
+[Mon May 06 20:00:52.080009 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/utils/deprecation.py", line 94, in __call__
+[Mon May 06 20:00:52.080012 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response or self.get_response(request)
+[Mon May 06 20:00:52.080017 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.080021 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.080026 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.080030 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.080035 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.080039 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.080044 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.080048 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.080053 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.080056 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.080064 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.080068 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.080076 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
+[Mon May 06 20:00:52.080083 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.080086 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] During handling of the above exception, another exception occurred:
+[Mon May 06 20:00:52.080089 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] 
+[Mon May 06 20:00:52.080094 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] Traceback (most recent call last):
+[Mon May 06 20:00:52.080124 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 141, in __call__
+[Mon May 06 20:00:52.080128 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = self.get_response(request)
+[Mon May 06 20:00:52.080133 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 75, in get_response
+[Mon May 06 20:00:52.080137 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = self._middleware_chain(request)
+[Mon May 06 20:00:52.080142 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 36, in inner
+[Mon May 06 20:00:52.080145 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = response_for_exception(request, exc)
+[Mon May 06 20:00:52.080151 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 90, in response_for_exception
+[Mon May 06 20:00:52.080154 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+[Mon May 06 20:00:52.080160 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 125, in handle_uncaught_exception
+[Mon May 06 20:00:52.080163 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return debug.technical_500_response(request, *exc_info)
+[Mon May 06 20:00:52.080168 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 94, in technical_500_response
+[Mon May 06 20:00:52.080172 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     html = reporter.get_traceback_html()
+[Mon May 06 20:00:52.080177 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/home/leandro/CS50W/comparador/lpdaj/project_final/.venv/lib/python3.6/site-packages/django/views/debug.py", line 332, in get_traceback_html
+[Mon May 06 20:00:52.080180 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     t = DEBUG_ENGINE.from_string(fh.read())
+[Mon May 06 20:00:52.080186 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]   File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+[Mon May 06 20:00:52.080191 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740]     return codecs.ascii_decode(input, self.errors)[0]
+[Mon May 06 20:00:52.080200 2019] [wsgi:error] [pid 7309:tid 140384726898432] [remote 192.168.0.3:51740] UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 9735: ordinal not in range(128)
