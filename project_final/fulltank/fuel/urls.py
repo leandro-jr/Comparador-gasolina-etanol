@@ -18,3 +18,6 @@ urlpatterns = [
     path("search_car_city", views.search_car_city, name="search_car_city"),
     path("get_client_ip", views.get_client_ip, name="get_client_ip")
 ]
+
+# handler404 = views.handler404
+# handler500 = views.handler500

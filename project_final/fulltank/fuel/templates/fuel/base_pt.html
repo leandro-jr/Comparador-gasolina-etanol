@@ -14,7 +14,7 @@
  	 gtag('config', 'UA-139748764-1');
 	</script>
         <title>{% block title %}{% endblock %}</title>
-	<META NAME="Description" CONTENT="Como saber qual combustível usar: gasolina ou etanol? Escolha seu carro e cidade e veja qual combustível é mais vantajoso para o seu bolso na cidade e na estrada, Atualizado em: Maio 2019">
+	<META NAME="Description" CONTENT="Como saber qual combustível usar: gasolina ou etanol. Escolha seu carro e cidade e veja qual é mais vantajoso para o seu bolso. Atualizado em: Maio 2019">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8"/>
         <link rel="icon" type="image/ico" href="{% static 'fuel/pump2.png' %}"/>
@@ -33,14 +33,20 @@
           "step": [
             {
             "@type": "HowToStep",
+            "name": "Selecione seu carro",
+            "url": "https://www.gasolinaetanol.com.br",
             "text": "Procure pelo seu carro na lista. Ex: digite onix e escolha seu entre os resultados.",
             "image": "{% static 'fuel/step1.png' %}"
           }, {
             "@type": "HowToStep",
+            "name": "Selecione sua cidade",
+            "url": "https://www.gasolinaetanol.com.br",
             "text": "Procure pela cidade onde vai abastecer na lista. Ex: digite sao paulo e ecolha entre os resultados. Você também pode digitar os preços da gasolina e etanol se preferir.",
             "image": "{% static 'fuel/step2.png' %}"
           }, {
             "@type": "HowToStep",
+            "name": "Veja os resultados",
+            "url": "https://www.gasolinaetanol.com.br",
             "text": "Clique em Enviar e veja os resultados de qual combustível vale mais a pena usar: gasolina ou etanol na esstra e na cidade. Clique em +Detalhes se quiser saber detalhes dos cálculos.",
             "image": "{% static 'fuel/step3.png' %}"
           }

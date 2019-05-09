@@ -1,0 +1,16 @@
+{% extends "fuel/base3_pt.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block body %}
+    <h2>:( Página Não Encontrada</h2>
+
+    Que tal voltar para página inicial?
+
+    <hr>
+
+    <a href="{% url 'index' %}">Retornar para página inicial.</a>
+
+{% endblock %}

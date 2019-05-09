@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-&(hp3q&)3zdvfe#ur3wmabwse8)d!*b=qrlcousek6jdve08s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['134.209.38.212', 'www.gasolinaetanol.com.br', 'localhost']
 
