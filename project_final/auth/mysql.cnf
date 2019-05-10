@@ -1,5 +1,5 @@
 [client]
 database = 'comparador_db'
 user = 'leandro'
-password = ''
+password = 'Selenita1,'
 default-character-set = 'utf8mb4'
