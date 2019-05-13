@@ -1,6 +1,6 @@
 from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect, Http404, JsonResponse
 from django.shortcuts import render
-# import geoip2.database
+import geoip2.database
 import csv
 import time
 from django.core.mail import EmailMessage
@@ -21,15 +21,37 @@ def index(request):
     except Cities.DoesNotExist:
         return render(request, "fuel/error.html", {"message": "We are experiencing a problem on our system. Please try again in a few minutes"})
 
+    #obtain user's IP:
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    print(x_forwarded_for)
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[-1].strip()
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+        print(ip)
+
+
+    print(f"IP is {ip}")
+    # obtain city using IP
+    reader = geoip2.database.Reader('GeoLite2-City_20190326/GeoLite2-City.mmdb')
+    response = reader.city('201.6.197.29')
+    city_ip = (response.subdivisions.most_specific.name).upper()
+    print(f"city_ip is {city_ip}")
+    reader.close()
+
 
     # present major Brazilian cities first on the datalist
     cities = ['SAO PAULO', 'RIO DE JANEIRO', 'BELO HORIZONTE', 'BRASILIA', 'PORTO ALEGRE',
               'RECIFE', 'FORTALEZA', 'SALVADOR', 'CURITIBA']
 
+    if city_ip in cities:
+        cities.remove(city_ip)
+
     context = {
         "cars": cars,
         "locations": locations,
         "cities": cities,
+        "city_ip": city_ip
     }
     return render(request, "fuel/index3_pt.html", context)
 
@@ -264,6 +286,7 @@ def car_city5(request):
 
     cities = ['SAO PAULO-SP', 'RIO DE JANEIRO-RJ', 'BELO HORIZONTE-MG', 'BRASILIA-DF', 'PORTO ALEGRE-RS',
               'RECIFE-PE', 'FORTALEZA-CE', 'SALVADOR-BA', 'CURITIBA-PR']
+
     for c in cities_all:
         city = c.city
         try:
