@@ -23,18 +23,18 @@ def index(request):
 
     #obtain user's IP:
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-    print(x_forwarded_for)
+    # print(x_forwarded_for)
     if x_forwarded_for:
         ip = x_forwarded_for.split(',')[-1].strip()
     else:
         ip = request.META.get('REMOTE_ADDR')
-        print(ip)
+        # print(ip)
 
 
     print(f"IP is {ip}")
     # obtain city using IP
-    reader = geoip2.database.Reader('/home/leandro/CS50W/comparador/lpdaj/project_final/fulltank/GeoLite2-City_20190326/GeoLite2-City.mmdb')
-    response = reader.city('201.6.197.29')
+    reader = geoip2.database.Reader('/lpdaj/project_final/fulltank/GeoLite2-City_20190326/GeoLite2-City.mmdb')
+    response = reader.city(ip)
     city_ip = (response.subdivisions.most_specific.name).upper()
     print(f"city_ip is {city_ip}")
     reader.close()

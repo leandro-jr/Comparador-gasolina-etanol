@@ -101,6 +101,7 @@ Comparador Gasolina Etanol - Como saber qual combustível vale mais a pena
                         </div>
                          <datalist id="city2">
                              <select multiple size=10>
+				 <option>{{ city_ip }}</option>
                                  {% for city in cities %}
                                     <option value="{{ city }}">{{ city }}</option>
                                  {% endfor %}
