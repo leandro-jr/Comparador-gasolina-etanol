@@ -33,7 +33,7 @@ def index(request):
 
     print(f"IP is {ip}")
     # obtain city using IP
-    reader = geoip2.database.Reader('GeoLite2-City_20190326/GeoLite2-City.mmdb')
+    reader = geoip2.database.Reader('/home/leandro/CS50W/comparador/lpdaj/project_final/fulltank/GeoLite2-City_20190326/GeoLite2-City.mmdb')
     response = reader.city('201.6.197.29')
     city_ip = (response.subdivisions.most_specific.name).upper()
     print(f"city_ip is {city_ip}")
