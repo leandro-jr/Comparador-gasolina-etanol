@@ -46,6 +46,10 @@ def index(request):
 
     if city_ip in cities:
         cities.remove(city_ip)
+    
+    city_ip_search = Cities.objects.filter(city=city_ip)
+    if not city_ip_search:
+        city_ip = "MANAUS"
 
     context = {
         "cars": cars,
