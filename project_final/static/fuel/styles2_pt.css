@@ -114,7 +114,7 @@ table {
    border: 1px solid #626262;
    // border: 1px solid rgb(255, 255, 255);
    // border: 1px solid rgba(255, 255, 255, .5);
-   margin-bottom: 10px;
+   margin-bottom: 6px;
 }
 
 td, th {
@@ -140,6 +140,72 @@ ul {
 #knowmore1 {
     color: #51005d;
     font-size: 14px;
+    margin-bottom: 4px;
+}
+
+#sharing {
+    margin-top: 30px;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  font-size: 20px;
+  color: white;
+  background: #55ACEE;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 2px 5px 2px;
+  padding: 10px 0 0 0;
+
+}
+
+.fa-facebook-f {
+  font-size: 20px;
+  color: white;
+  background: #3b5998;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 2px 5px 2px;
+  padding: 10px 0 0 0;
+}
+
+.fa-whatsapp {
+  font-size: 20px;
+  color: white;
+  background: #25D366;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 2px 5px 2px;
+  padding: 10px 0 0 0;
+}
+
+.fa-envelope {
+    font-size: 20px;
+    color: white;
+    background: #545454;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 2px 5px 2px;
+    padding: 10px 0 0 0;
 }
 
 footer {

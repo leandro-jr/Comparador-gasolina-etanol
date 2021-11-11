@@ -141,9 +141,9 @@ def load(request):
 
 
    # count = 0
-    # city_list = []
+   # city_list = []
    # city_dict = {}
-   # f = open("price_maio19_w01.csv")
+   # f = open("price_agosto21.csv")
    # reader = csv.reader(f)
    # for date, product, region, state, city, avg_price in reader:
    #     p = Price(date=date, product=product, region=region, state=state, city=city, avg_price=avg_price)
