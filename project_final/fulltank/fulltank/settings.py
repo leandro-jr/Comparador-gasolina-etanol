@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-&(hp3q&)3zdvfe#ur3wmabwse8)d!*b=qrlcousek6jdve08s'
+SECRET_KEY = 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'fulltank.wsgi.application'
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'comparador_db',
 #         'USER': 'leandro',
-#         'PASSWORD': 'selenita',
+#         'PASSWORD': '',
 #         'HOST': 'localhost',
 #         'PORT': '5432',
 #         'OPTIONS': {'charset': 'utf8mb4'},
